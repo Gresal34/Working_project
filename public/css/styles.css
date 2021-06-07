@@ -1,0 +1,314 @@
+*{
+    display:flex;
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color:#000000;
+    scroll-behavior: smooth;
+}
+
+head,script{
+    display: none;
+}
+
+body{
+    flex-direction: column;
+    width:100vw;
+}
+
+nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 0;
+    background:#575858;
+    position: fixed;
+    width:100vw;
+}
+
+nav p{
+    color:white;
+    margin:0 0 0 30px;
+    
+}
+
+nav .logo{
+    height:50px;
+    margin:0 0 0 30px;
+}
+
+
+nav ul{
+    margin:0 30px 0 0;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-transform: uppercase;
+}
+
+section{
+    flex-direction: column;
+}
+
+section.hero{
+    flex-direction: column;
+    /* height:90vh; */
+    padding:250px 0 50px 0;
+    justify-content: center;
+    align-items: center;
+    background:url(../images/bg.jpg),linear-gradient(#ffffff4f,#dbc69d);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+}
+
+section.hero h1{
+    font-size:50px;
+}
+
+section.hero h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+section.hero div{
+    margin-top:50px;
+    padding:20px 20px 20px 20px;
+    background:white;
+}
+
+.imageOfTheDayContainer{
+    flex-direction: column;
+}
+
+.imageOfTheDayContainer figcaption{
+    margin-top: 25px;
+}
+
+section.hero div .imageOfTheDay{
+    height:250px;
+}
+
+section.about{
+    justify-content: center;
+    align-items: center;
+    padding:150px 0;
+}
+
+section.about h2{
+    font-size: 80px;
+    margin:0 0 20px 0;
+}
+
+section.about .bigLogo{
+    height:300px;
+}
+
+section.about p{
+    margin:0 0 10px 0;
+    width:700px;
+    text-align: center;
+}
+
+section.service{
+    justify-content: center;
+    align-items: center;
+    padding:150px 0;
+    background:#a1a1a1;
+}
+
+section.service ul{
+    width:900px;
+    flex-direction: row;
+    margin:20px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.service ul li{
+    width:180px;
+    margin:20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.service h2{
+    font-size: 50px;
+}
+
+section.service ul li i{
+    margin:10px 0;
+    color:#ffffff;
+}
+
+section.service ul li p{
+    text-align: center;
+}
+
+section.schedule{
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section.schedule form{
+    width:500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid #96c3ce; */
+    background:white;
+    filter:drop-shadow(0 10px 10px #0000002f);
+    border-radius: 10px;
+    padding:50px 10px;
+    margin:50px 0 0 0;
+}
+
+section.schedule form fieldset{
+    width:400px;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 0;
+    padding:0;
+    border-radius: 10px;
+    border:none;
+}
+
+section.schedule form fieldset input{
+    padding:5px;
+    width:250px;
+}
+
+.form_button{
+    margin:20px 0 0 0;
+    width:425px;
+    padding:20px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background:#8bddf1;
+    color:white;
+    text-align: center;
+}
+
+
+section.packageInfo{
+    display:none;
+    position: fixed;
+    top:0;
+    height:100vh;
+    width:100vw;
+    background:#00000096;
+    justify-content: center;
+    align-items: center;
+}
+
+section.packageInfo .wrapper{
+    /* height:90vh; */
+    /* width:50vw; */
+    border-radius: 10px;
+    background:white;
+    justify-content: center;
+    align-items: center;
+}
+
+section.packageInfo form{
+    /* width:500px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section.packageInfo form .sender,section.packageInfo form .recipient{
+    flex-direction: column;
+}
+
+section.packageInfo form .sender h2,section.packageInfo form .recipient h2{
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+section.packageInfo form .sender{
+    padding:40px 20px 40px 40px;
+    background:#b9b9b9;
+}
+
+section.packageInfo form .recipient{
+    padding:40px 40px 40px 20px;
+}
+
+section.packageInfo form fieldset{
+    flex-direction: column;
+    /* width:400px; */
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+    padding:0;
+    border-radius: 10px;
+    border:none;
+}
+
+section.packageInfo form fieldset input{
+    padding:5px;
+    width:250px;
+    margin:0 0 0 5px;
+}
+
+.actionContainer{
+    padding:20px 0;
+    background:#979797;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionContainer button{
+    width:425px;
+    padding:20px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background:#8bddf1;
+    color:white;
+}
+
+.form_button{
+    margin:20px 0 0 0;
+    width:425px;
+    padding:20px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background:#8bddf1;
+    color:white;
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 0;
+    background:#383838;
+}
+
+footer p{
+    font-size:14px;
+    margin:10px 0;
+    color:white;
+}
